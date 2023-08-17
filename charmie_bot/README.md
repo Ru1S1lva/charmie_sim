@@ -7,9 +7,9 @@ passos iniciais em cada tab do terminal:
 para usar joystick:
 - conectar primeiro joystick via bluetooth ao pc
 - ros2 launch charmie_bot joystick.launch.py
-- L1 (normal) ou R1 (turbo) manter premido para acionar, quando solto robo para
+- L1 (normal) ou R1 (turbo) manter premido para acionar, quando solto, robo para
 - joystick esquerdo move X e Y
-- joysitck
+- joysitck direito move Z
 
 iniciar ambiente gazebo:
 - ambiente com robo - ros2 launch charmie_bot launch_sim.launch.py
