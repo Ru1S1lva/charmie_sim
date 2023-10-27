@@ -1,0 +1,30 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100 #Hz
+    #use_sim_time: true
+
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+joint_trajectory_controller:
+  ros__parameters:
+    joints:
+      - camera_joint_z
+      - camera_joint_y
+      - L_shoulder_joint_y
+      - L_shoulder_joint_x
+      - L_elbow_joint_z
+      - L_elbow_joint_x
+      - L_hand_joint_z
+      - L_hand_joint_x
+      - L_left_gripper_slide_joint
+      - L_right_gripper_slide_joint
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
